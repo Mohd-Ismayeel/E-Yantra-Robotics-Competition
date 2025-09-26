@@ -1,0 +1,12 @@
+Bang Bang Controller is nothing but the on-off controller.
+
+# To understand this Run the Bang-Bang_Sim.py or Bang-Bang_Sim.C (preferably python file because it also plots the values)
+
+If the current value is below set point, the control action is to ON
+If the current value is above set point, the control action is to OFF
+
+If temp<50(set point) heater is ON and temperature is increased in steps of 5 degrees every cycle until it isn't less than 50(either equal to or greater than 50)
+When temp is not <50, the heater is OFF and the temperature is reduced by 2 degrees every cycle because of ambience temperature of 20 degrees.
+
+I Implemented the Bang-Bang Control for the Robot and made the it work as a line follower. The speeds can be altered. But now the objective is to implement the same using PID
+Let's go step by step and first do the P Controller.
